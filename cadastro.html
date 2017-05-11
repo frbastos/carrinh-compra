@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Carrinho de Compra</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center">Carrinho de Compras</h1>
+        </div>
+
+        <!-- FORMULARIO CADASTRO -->
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Formulario de Cadastro</h2>
+                <form>
+                    <div class="form-group">
+                        <label>Código:</label>
+                        <input id="codigo" class="form-control" type="text" placeholder="Código">
+                    </div>
+                    <div class="form-group">
+                        <label>Descrição:</label>
+                        <input id="descricao" class="form-control" type="text" placeholder="Descrição">
+                    </div>
+                    <div class="form-group">
+                        <label>Preço:</label>
+                        <input id="preco" class="form-control" type="text" placeholder="Preço">
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="adicionar()">Adicionar</button>
+                    <button type="button" class="btn btn-primary" onclick="limparPedido()">Limpar Pedido</button>
+                    <button type="button" class="btn btn-primary" onclick="apagarPrimeiro()">Apagar Primeiro</button>
+                    <button type="button" class="btn btn-primary" onclick="apagarUltimo()">Apagar Último</button>
+                </form>
+            </div>
+        </div> 
+        <!-- ./FORMULARIO CADASTRO -->
+
+</body>
+
+</html>
